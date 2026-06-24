@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "project": "{{PROJECT_NAME}}",
+  "projectState": "{{PROJECT_STATE}}",
+  "language": "{{PROJECT_LANGUAGE}}",
+  "driftMode": "informational",
+  "ownership": [
+    {
+      "code": ["src/**", "tools/**", "scripts/**"],
+      "docs": ["docs/architecture.md", "AGENTS.md"]
+    },
+    {
+      "code": ["adapters/**"],
+      "docs": ["docs/ides.md"]
+    }
+  ]
+}

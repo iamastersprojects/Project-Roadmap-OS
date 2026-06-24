@@ -1,0 +1,18 @@
+{
+  "name": "project-roadmap-os",
+  "version": "0.1.0",
+  "description": "Portable human-agent roadmap, context, learning, repair, and evidence operating system.",
+  "type": "module",
+  "bin": {
+    "roadmap-os": "./src/cli.mjs"
+  },
+  "scripts": {
+    "test": "node --test",
+    "smoke": "node ./scripts/smoke.mjs",
+    "check:secrets": "node ./scripts/check-secrets.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

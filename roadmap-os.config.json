@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "project": "Project Roadmap OS",
+  "projectState": "new",
+  "language": "es",
+  "driftMode": "informational",
+  "ownership": [
+    {
+      "code": ["src/**"],
+      "docs": ["docs/ARCHITECTURE.md", "README.md"]
+    },
+    {
+      "code": ["adapters/**"],
+      "docs": ["docs/IDES.md"]
+    },
+    {
+      "code": ["installers/**"],
+      "docs": ["docs/INSTALL.md"]
+    }
+  ]
+}
