@@ -21,6 +21,12 @@ Usa `CLAUDE.md` y comandos acotados bajo `.claude/commands/`.
 
 Usa `opencode.jsonc` y `.opencode/commands/`.
 
+## Antigravity
+
+Usa `AGENTS.md` como `user_rules` cargado automáticamente por la IDE.
+Opcionalmente `.gemini/AGENTS.md` como referencia dentro del adaptador.
+Knowledge Items se pueden configurar para apuntar a context packs y briefs.
+
 ## Genérico
 
 Usa `AGENTS.md` y `.agents/ROADMAP-OS.md`.

@@ -28,7 +28,7 @@ test("init creates the portable core and selected adapters", () => {
     "--target", target,
     "--name", "Fixture Project",
     "--state", "new",
-    "--ide", "codex,claude-code,opencode,generic"
+    "--ide", "codex,claude-code,opencode,generic,antigravity"
   ]);
 
   assert.match(output, /initialized/i);
@@ -46,7 +46,8 @@ test("init creates the portable core and selected adapters", () => {
     "CLAUDE.md",
     ".codex/README.md",
     ".opencode/commands/roadmap-start.md",
-    ".agents/ROADMAP-OS.md"
+    ".agents/ROADMAP-OS.md",
+    ".gemini/AGENTS.md"
   ]) {
     assert.equal(existsSync(join(target, relative)), true, `missing ${relative}`);
   }
@@ -151,4 +152,21 @@ test("drift passes when owned documentation changes with code", () => {
 
   assert.equal(report.ok, true);
   assert.deepEqual(report.findings, []);
+});
+
+test("init with antigravity adapter creates .gemini/AGENTS.md", () => {
+  const target = tempWorkspace("antigravity");
+
+  const output = run([
+    "init",
+    "--target", target,
+    "--name", "Antigravity Project",
+    "--state", "new",
+    "--ide", "antigravity"
+  ]);
+
+  assert.match(output, /initialized/i);
+  assert.equal(existsSync(join(target, ".gemini", "AGENTS.md")), true, "missing .gemini/AGENTS.md");
+  assert.match(readFileSync(join(target, ".gemini", "AGENTS.md"), "utf8"), /Antigravity/);
+  assert.equal(existsSync(join(target, "AGENTS.md")), true, "missing core AGENTS.md");
 });

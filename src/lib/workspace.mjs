@@ -8,7 +8,8 @@ const adapterRoots = {
   codex: "codex",
   "claude-code": "claude-code",
   opencode: "opencode",
-  generic: "generic"
+  generic: "generic",
+  antigravity: "antigravity"
 };
 
 function render(content, values) {
