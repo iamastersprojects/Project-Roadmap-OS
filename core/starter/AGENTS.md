@@ -7,7 +7,10 @@ This workspace uses Project Roadmap OS.
 1. Read `AGENTS.md`, `index.md`, and the latest `log.md`.
 2. Read the relevant project brief or context pack.
 3. Check Roadmap OS before creating duplicate future work.
-4. Use the smallest useful workflow and verify before completion.
+4. Start from the smallest useful context surface.
+   - General task: read brief/context pack, then targeted pages only.
+   - Full methodology reread is an escalation, not a default.
+5. Verify before completion.
 
 ## Project Knowledge
 
